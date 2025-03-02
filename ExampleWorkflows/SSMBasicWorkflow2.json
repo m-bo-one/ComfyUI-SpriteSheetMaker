@@ -1,0 +1,214 @@
+{
+  "last_node_id": 63,
+  "last_link_id": 49,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        -177.30934143066406,
+        -84.98253631591797
+      ],
+      "size": [
+        768.4443969726562,
+        627.5555419921875
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1,
+      "type": "SpriteSheetMaker",
+      "pos": [
+        -556.9906616210938,
+        -7.831226825714111
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images_directory",
+          "type": "COMBO",
+          "widget": {
+            "name": "images_directory"
+          },
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sprite_image",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SpriteSheetMaker"
+      },
+      "widgets_values": [
+        "Knight",
+        3,
+        3
+      ]
+    },
+    {
+      "id": 63,
+      "type": "CR Text",
+      "pos": [
+        -1069.4100341796875,
+        -51.47175979614258
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            49
+          ]
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 61,
+      "type": "Note",
+      "pos": [
+        -1126.100341796875,
+        -222.25543212890625
+      ],
+      "size": [
+        513.3806762695312,
+        120.71231079101562
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Put the folder path where your images are stored in the text field below. Example C:\\Knight"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      49,
+      63,
+      0,
+      1,
+      0,
+      "COMBO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8769226950000016,
+      "offset": {
+        "0": 1113.0328369140625,
+        "1": 302.39617919921875
+      }
+    },
+    "node_versions": {
+      "comfy-core": "0.3.18",
+      "ComfyUI-SpriteSheetMaker": "unknown",
+      "ComfyUI_Comfyroll_CustomNodes": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca"
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
+  },
+  "version": 0.4,
+  "api_prompt": {
+    "1": {
+      "inputs": {
+        "images_directory": [
+          "63",
+          0
+        ],
+        "row_count": 3,
+        "column_count": 3
+      },
+      "class_type": "SpriteSheetMaker",
+      "_meta": {
+        "title": "SpriteSheetMaker"
+      }
+    },
+    "2": {
+      "inputs": {
+        "images": [
+          "1",
+          0
+        ]
+      },
+      "class_type": "PreviewImage",
+      "_meta": {
+        "title": "Preview Image"
+      }
+    },
+    "63": {
+      "inputs": {
+        "text": ""
+      },
+      "class_type": "CR Text",
+      "_meta": {
+        "title": "🔤 CR Text"
+      }
+    }
+  }
+}
