@@ -9,6 +9,6 @@ Repository = "https://github.com/OSAnimate/ComfyUI-SpriteSheetMaker"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "OSAnimate"
+PublisherId = "osanimate"
 DisplayName = "ComfyUI-SpriteSheetMaker"
 Icon = ""
