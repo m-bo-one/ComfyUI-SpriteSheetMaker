@@ -105,7 +105,7 @@ class SpriteSheetFromImages:
     def INPUT_TYPES(s):
         return {
             "required": { 
-                "image": ("IMAGE", {
+                "images": ("IMAGE", {
                     "tooltip": "Batch of input images to assemble into a grid."
                 }),
                 "mode": (["auto", "manual"], {
