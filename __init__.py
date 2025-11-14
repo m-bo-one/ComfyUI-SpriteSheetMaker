@@ -1,10 +1,12 @@
-from .node import ImageGridNode
+from .node import SpriteSheetFromFolder, SpriteSheetFromImages
  
 NODE_CLASS_MAPPINGS = { 
-    "SpriteSheetMaker" : ImageGridNode,
+    "SpriteSheetFromFolder" : SpriteSheetFromFolder,
+    "SpriteSheetFromImages" : SpriteSheetFromImages,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-     "ImageGridNode" : "Image Grid"
+     "SpriteSheetFromFolder" : "SpriteSheet (folder)",
+     "SpriteSheetFromImages" : "SpriteSheet (images)",
 }
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

@@ -1,14 +1,14 @@
 [project]
 name = "ComfyUI-SpriteSheetMaker"
-description = "A simple way to create sprite sheets and image grids."
+description = "A simple way to create sprite sheets and image grids from video stream."
 version = "1.0.0"
 license = {file = "LICENSE"}
 
 [project.urls]
-Repository = "https://github.com/OSAnimate/ComfyUI-SpriteSheetMaker"
+Repository = "https://github.com/m-bo-one/ComfyUI-SpriteSheetMaker"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "osanimate"
+PublisherId = "m-bo-one"
 DisplayName = "ComfyUI-SpriteSheetMaker"
 Icon = ""
